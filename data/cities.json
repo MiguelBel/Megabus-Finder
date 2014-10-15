@@ -1,0 +1,7 @@
+{
+  "cities":
+    [
+      {"city_name": "Gent", "city_code": 124, "file_name": "cities_from_gent"},
+      {"city_name": "Brussels", "city_code": 112, "file_name": "cities_from_brussels"}
+    ]
+}

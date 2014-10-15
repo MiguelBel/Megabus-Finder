@@ -1,15 +1,16 @@
 class URLConstructor
 
   def initialize(initial_city)
-    if initial_city == "Brussels"
-      content = File.read('data/cities_from_brussels.json')
-      @code = 112
-    elsif initial_city == "Gent"
-      content = File.read('data/cities_from_gent.json')
-      @code = 124
+    cities = JSON.parse(File.read('data/cities.json'))["cities"]
+
+    cities.each do |city|
+      if city["city_name"].downcase == initial_city.downcase
+        @content = File.read("data/#{city['file_name']}.json")
+        @code = city["city_code"]
+      end
     end
-      
-    @posible_destinations = JSON.parse(content)
+
+    @posible_destinations = JSON.parse(@content)
   end
 
   def posible_destinations
