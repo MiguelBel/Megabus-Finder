@@ -11,7 +11,7 @@ But feel free if you want to add more, is just add one json file to the data fol
 
 ## Usage
 
-For use just use that command
+For use just use that command: (the dates should be like dd-mm-yy)
 
 ````
 ruby megabus_finder.rb [origin_city] [oubound_date] [inbound_date]
