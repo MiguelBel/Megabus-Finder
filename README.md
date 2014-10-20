@@ -2,10 +2,11 @@
 
 Megabus Finder is a command line application for find the cheapest trips from one city given the outbound and inbound date.
 
-I developed for my intereset so there is only two cities:
+I developed for my intereset so there is only three cities (the three cities of belgium where megabus has stop):
 
 * Gent
 * Brussels
+* Antwerp
 
 But feel free if you want to add more, is just add one json file to the data folder and edit the cities.json in the same folder.
 
